@@ -4,12 +4,8 @@
 git config --global user.email "alexk@motu.com"
 git config --global user.name "Alex Karpinski"
 
-
-# get dnf
-sudo yum install -y dnf
-
 # get NeoVim
-sudo dnf -y copr enable dperson/neovim; sudo dnf install -y neovim
+sudo yum -y copr enable dperson/neovim; sudo yum install -y neovim
 
 # Move vimrc into place
 mkdir -p ~/.config/nvim/undo
